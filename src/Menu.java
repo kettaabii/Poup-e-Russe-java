@@ -9,9 +9,9 @@ import static java.lang.System.*;
 
 
 public class Menu {
-    PoupeeRusse Poupee1 = new PoupeeRusse("Poupee 1", false, 0, true, null,null);
-    PoupeeRusse Poupee2 = new PoupeeRusse("Poupee 2", false, 0, true, null,null);
-    PoupeeRusse Poupee3 = new PoupeeRusse("Poupee 3", false, 0, true, null,null);
+    PoupeeRusse Poupee1 = new PoupeeRusse("Poupee 1 ", false, 0, true, null,null);
+    PoupeeRusse Poupee2 = new PoupeeRusse("Poupee 2 ", false, 0, true, null,null);
+    PoupeeRusse Poupee3 = new PoupeeRusse("Poupee 3 ", false, 0, true, null,null);
 
 
     void menuPrincipal() {
@@ -66,11 +66,11 @@ public class Menu {
         Scanner input = new Scanner(in);
         out.println("feliciation vous avez donné les tailles au poupées");
         ////////////////////////////////////////
-        System.out.println("Poupee 1==" + Poupee1.getTaille());
-        System.out.println("Poupee 2== " + Poupee2.getTaille());
-        System.out.println("Poupee 3==" + Poupee3.getTaille());
+        System.out.println("Poupee 1 --> " + Poupee1.getTaille());
+        System.out.println("Poupee 2 --> " + Poupee2.getTaille());
+        System.out.println("Poupee 3 --> " + Poupee3.getTaille());
         ///////////////////////////////////////
-        out.println("il est temp de leur donner des noms");
+        out.println("il est temps de leur donner des noms");
         out.println("1-oui D'accord    2-c'est pas la peine");
         int choix = input.nextInt();
         switch (choix) {
@@ -98,9 +98,9 @@ public class Menu {
 
     public PoupeeRusse affichernoms() {
         Scanner input = new Scanner(in);
-        out.println("Poupee 1  :" + Poupee1.getName() + "||  Poupee2 :" + Poupee2.getName() + "||  Poupee3 :" + Poupee3.getName());
-        out.println("Taille 1  :" + Poupee1.getTaille() + "||  Taille :" + Poupee2.getTaille() + "||  Taille 3 :" + Poupee3.getTaille());
-        out.println("Etat 1    :" + Poupee1.ouverte() + "||  Etat 2 : " + Poupee2.ouverte() + "||  Etat 3 :" + Poupee3.ouverte());
+        out.println("Poupee 1  :       " + Poupee1.getName() +   "        \t||  Poupee2 :   " + Poupee2.getName() +     "      \t||  Poupee3 :    " + Poupee3.getName());
+        out.println("Taille 1  :       " + Poupee1.getTaille() + "        \t\t||  Taille :    " + Poupee2.getTaille() +   "      \t\t||  Taille 3 :   " + Poupee3.getTaille());
+        out.println("Etat 1    :       " + Poupee1.ouverte() +   "        \t||  Etat 2 :    " + Poupee2.ouverte() +     "      \t||  Etat 3 :     " + Poupee3.ouverte());
         out.println("===============================================================");
         out.println("==========Parfait , maintenant le Popées son pretes============");
         out.println("choisir la Pouper a ouvrir , puis choisir la Poupée que vous voulez mettre de dans");
@@ -110,9 +110,9 @@ public class Menu {
             case 1:
                 poupeeOuverte=Poupee1;
                 this.Poupee1.ouvrir();
-                out.println("Poupee 1  :" + Poupee1.getName() + "||  Poupee 2 :" + Poupee2.getName() + "||  Poupee3 :" + Poupee3.getName());
-                out.println("Taille 1  :" + Poupee1.getTaille() + "||  Taille 2 :" + Poupee2.getTaille() + "||  Taille 3 :" + Poupee3.getTaille());
-                out.println("Etat 1    :" + Poupee1.ouverte() + "||  Etat 2 : " + Poupee2.ouverte() + "||  Etat 3 :" + Poupee3.ouverte());
+                out.println("Poupee 1  :       " + Poupee1.getName() +   "        \t||  Poupee2 :   " + Poupee2.getName() +     "      \t||  Poupee3 :    " + Poupee3.getName());
+                out.println("Taille 1  :       " + Poupee1.getTaille() + "        \t\t||  Taille :    " + Poupee2.getTaille() +   "      \t\t||  Taille 3 :   " + Poupee3.getTaille());
+                out.println("Etat 1    :       " + Poupee1.ouverte() +   "        \t||  Etat 2 :    " + Poupee2.ouverte() +     "      \t||  Etat 3 :     " + Poupee3.ouverte());
                 Placer(poupeeOuverte);
 
 
@@ -120,17 +120,17 @@ public class Menu {
             case 2:
                 poupeeOuverte=Poupee2;
                 this.Poupee2.ouvrir();
-                out.println("Poupee 1  :" + Poupee1.getName() + "||  Poupee 2 :" + Poupee2.getName() + "||  Poupee 3 :" + Poupee3.getName());
-                out.println("Taille 1  :" + Poupee1.getTaille() + "||  Taille 2:" + Poupee2.getTaille() + "||  Taille 3 :" + Poupee3.getTaille());
-                out.println("Etat 1    :" + Poupee1.ouverte() + "||  Etat 2 : " + Poupee2.ouverte() + "||  Etat 3 :" + Poupee3.ouverte());
+                out.println("Poupee 1  :       " + Poupee1.getName() +   "        \t||  Poupee2 :   " + Poupee2.getName() +     "      \t||  Poupee3 :    " + Poupee3.getName());
+                out.println("Taille 1  :       " + Poupee1.getTaille() + "        \t\t||  Taille :    " + Poupee2.getTaille() +   "      \t\t||  Taille 3 :   " + Poupee3.getTaille());
+                out.println("Etat 1    :       " + Poupee1.ouverte() +   "        \t||  Etat 2 :    " + Poupee2.ouverte() +     "      \t||  Etat 3 :     " + Poupee3.ouverte());
                 Placer(poupeeOuverte);
                 break;
             case 3:
                 poupeeOuverte=Poupee3;
                 this.Poupee3.ouvrir();
-                out.println("Poupee 1  :" + Poupee1.getName() + "||  Poupee 2 :" + Poupee2.getName() + "||  Poupee 3 :" + Poupee3.getName());
-                out.println("Taille 1  :" + Poupee1.getTaille() + "||  Taille 2 :" + Poupee2.getTaille() + "||  Taille 3 :" + Poupee3.getTaille());
-                out.println("Etat 1    :" + Poupee1.ouverte() + "||  Etat 2 : " + Poupee2.ouverte() + "||  Etat 3 :" + Poupee3.ouverte());
+                out.println("Poupee 1  :       " + Poupee1.getName() +   "        \t||  Poupee2 :   " + Poupee2.getName() +     "      \t||  Poupee3 :    " + Poupee3.getName());
+                out.println("Taille 1  :       " + Poupee1.getTaille() + "        \t\t||  Taille :    " + Poupee2.getTaille() +   "      \t\t||  Taille 3 :   " + Poupee3.getTaille());
+                out.println("Etat 1    :       " + Poupee1.ouverte() +   "        \t||  Etat 2 :    " + Poupee2.ouverte() +     "      \t||  Etat 3 :     " + Poupee3.ouverte());
                 Placer(poupeeOuverte);
                 break;
             default:
@@ -156,8 +156,8 @@ public class Menu {
         if(choix==1){
             poupeeOuverte.setContenu(Pc1);
             Pc1.placerDansPoupee(poupeeOuverte);
-            out.println("maintenant vous avez "+poupeeOuverte.getName()+"contient "+poupeeOuverte.getContenu().getName());
-            out.println("il vous reste qu'a placer "+Pc2.getName()+"de dans");
+            out.println("maintenant vous avez "+poupeeOuverte.getName()+" contient "+poupeeOuverte.getContenu().getName());
+            out.println("il vous reste qu'a placer "+Pc2.getName()+" de dans");
             out.println("vous voulez \n 1-continuer ou bien \n 2- faire sortir la poupée");
             int c2=input.nextInt();
             switch(c2){
@@ -177,8 +177,8 @@ public class Menu {
         else if (choix==2) {
             poupeeOuverte.setContenu(Pc2);
             test.get(1).placerDansPoupee(poupeeOuverte);
-            out.println("maintenant vous avez "+poupeeOuverte.getName()+"contient "+poupeeOuverte.getContenu().getName());
-            out.println("il vous reste qu'a placer "+Pc1.getName()+"de dans");
+            out.println("maintenant vous avez "+poupeeOuverte.getName()+" contient "+poupeeOuverte.getContenu().getName());
+            out.println("il vous reste qu'a placer "+Pc1.getName()+" de dans");
             out.println("vous voulez \n 1-continuer ou bien \n 2- faire sortir la poupée");
             int c2=input.nextInt();
             switch(c2){
