@@ -7,17 +7,26 @@ class PoupeeRusse extends Poupee {
     private boolean isOuverte;
     private boolean empty;
     private PoupeeRusse Contetant;
-    public  PoupeeRusse(String name  ,Boolean isOuverte, int taille,boolean empty ,PoupeeRusse contenu ) {
+    private PoupeeRusse Contenu;
+    public  PoupeeRusse(String name  ,Boolean isOuverte, int taille,boolean empty ,PoupeeRusse contenant,PoupeeRusse contenu ) {
         super(taille);
         this.Name=name;
         this.isOuverte=isOuverte;
         this.empty=empty;
-        this.Contetant=contenu;
+        this.Contetant=contenant;
+        this.Contenu=contenu;
 
 
 
     }
 
+    public PoupeeRusse getContenu() {
+        return Contenu;
+    }
+
+    public void setContenu(PoupeeRusse contenu) {
+        Contenu = contenu;
+    }
 
     public String getName() {
         return Name;
@@ -70,7 +79,7 @@ class PoupeeRusse extends Poupee {
         else{
             out.println("Poupée Deja Ouverte  ");
 
-        }}
+    }}
     public void fermer() {
         if(isOuverte){
             setOuverte(false);
@@ -79,17 +88,17 @@ class PoupeeRusse extends Poupee {
             out.println("Poupée deja fermée");
         }
     }
-    public String ouverte(){
-        String Etat;
+public String ouverte(){
+    String Etat;
         if (isOuverte) {
             Etat ="ouverte";
-            // return out.println("ouverte");
+           // return out.println("ouverte");
         } else{
             Etat ="fermée";
             //out.println("fermée");
-        }
+            }
         return Etat;
-    }
+}
 
     @Override
     public void placerDansPoupee(Poupee P) {
@@ -103,10 +112,15 @@ class PoupeeRusse extends Poupee {
         }else{out.println("on ne peut pas placer la poupee "+this.Name +"dan la Poupée "+R.Name);
 
 
-        }}
+    }}
 
     @Override
     public void sortirDePoupee(Poupee P){
+        PoupeeRusse R=(PoupeeRusse) P;
+        out.println("la poupee "+this.Name+" est sortie de la poupee "+R.Name);
+        R.Contenu=null;
+        R.isOuverte=false;
+        isOuverte=false;
 
     }
 
